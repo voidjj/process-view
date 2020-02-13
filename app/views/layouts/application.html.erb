@@ -7,9 +7,20 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'hello_vue', media: 'all' %>
+    <%= javascript_pack_tag 'hello_vue', 'data-turbolinks-track': 'reload' %>
+
   </head>
+
+  <% if logged_in? %>
+      <li><%= link_to "Sign out", logout_path, method: :delete %>
+  <% end %>
+
 
   <body>
     <%= yield %>
+    <div class="container" data-behavior="vue">
+      <app></app>
+    </div>
   </body>
 </html>
