@@ -9,8 +9,9 @@ Installation (Ubuntu):
 1. ```git clone https://github.com/voidjj/process-view```
 2. ``` cd process-view ```
 3. ```bundle install```
-4. ``` ./bin/webpack-dev-server```
-5.  ```rails s```
+4. ```yarn install```
+5. ``` ./bin/webpack-dev-server```
+6.  ```rails s```
 
 
 Testing:
