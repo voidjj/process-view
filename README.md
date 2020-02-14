@@ -2,7 +2,7 @@
 
 Requirements:
 * ruby 2.6.2
-* node 12.16.0 (>=8.16.0")
+* node 12.16.0 (>=8.16.0)
 * yarn 1.2.1
 
 Installation (Ubuntu):
