@@ -4,23 +4,21 @@
     <title>ProcessView</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_pack_tag 'hello_vue', media: 'all' %>
-    <%= javascript_pack_tag 'hello_vue', 'data-turbolinks-track': 'reload' %>
-
   </head>
-
-  <% if logged_in? %>
-      <li><%= link_to "Sign out", logout_path, method: :delete %>
-  <% end %>
-
-
   <body>
-    <%= yield %>
-    <div class="container" data-behavior="vue">
-      <app></app>
+  <div class='centered'>
+    <div class="fields-container">
+      <% flash.each do |key, value| %>
+        <div class="alert alert-<%= key %>"><%= value %></div>
+      <% end %>
+      <% if logged_in? %>
+          <%= link_to "Sign out", logout_path, method: :delete, class: 'btn btn-lg btn-primary btn-block' %>
+      <% end %>
     </div>
+    <%= yield %>
+  </div>
   </body>
+
 </html>

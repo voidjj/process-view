@@ -5,18 +5,23 @@
 </template>
 
 <script>
+
 export default {
   data: function () {
     return {
-      message: "Hello Vue!"
+      message: 'Waiting for messages...'
     }
+  },
+  created: function () {
+    const vm = this
+    this.$cable.subscriptions.create(
+      { channel: 'StreamChannel' },
+      {
+        received: function (data) {
+          vm.message = data.message
+        }
+      }
+    );
   }
 }
 </script>
-
-<style scoped>
-p {
-  font-size: 2em;
-  text-align: center;
-}
-</style>

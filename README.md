@@ -1,24 +1,23 @@
-# README
+# This is a example of displaying system process in browser based on Ruby on Rails and Vue with ActionCable.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Requirements
 
-Things you may want to cover:
+* ruby '2.6.2'
+* node '12.16.0'
 
-* Ruby version
+Installation:
+*  
+*
+*
+*
+*
+*
 
-* System dependencies
 
-* Configuration
+Todo:
 
-* Database creation
+* Add more tests...
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* Fix bug connected with not receiving data on load home page
 
 * ...
