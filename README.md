@@ -1,23 +1,23 @@
-# This is a example of displaying system process in browser based on Ruby on Rails and Vue with ActionCable.
+# This is a example of displaying system process in browser based on Ruby on Rails 6 and Vue with ActionCable.
 
-Requirements
+Requirements:
+* ruby 2.6.2
+* node 12.16.0 (>=8.16.0")
+* yarn 1.2.1
 
-* ruby '2.6.2'
-* node '12.16.0'
+Installation (Ubuntu):
+1. ```git clone https://github.com/voidjj/process-view```
+2. ``` cd process-view ```
+3. ```bundle install```
+4. ``` ./bin/webpack-dev-server```
+5.  ```rails s```
 
-Installation:
-*  
-*
-*
-*
-*
-*
 
+Testing:
+1. ```rails t```
 
 Todo:
-
 * Add more tests...
-
 * Fix bug connected with not receiving data on load home page
-
+* Fix displaying new lines on process view
 * ...
